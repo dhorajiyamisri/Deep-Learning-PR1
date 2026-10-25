@@ -484,14 +484,14 @@ The following gallery brings together the main visualizations produced throughou
 
 **1. Class Distribution**
 
-<img src="plots/class_distribution.png" width="100%" alt="Class distribution">
+<img src="plots/class_distribution.png" width="60%" alt="Class distribution">
 
 </td>
 <td align="center" width="50%">
 
 **2. Correlation Heatmap**
 
-<img src="plots/correlation_heatmap.png" width="100%" alt="Correlation heatmap">
+<img src="plots/correlation_heatmap.png" width="60%" alt="Correlation heatmap">
 
 </td>
 </tr>
@@ -500,14 +500,14 @@ The following gallery brings together the main visualizations produced throughou
 
 **3. SLP Training Curves**
 
-<img src="plots/slp_training_curves.png" width="100%" alt="SLP training curves">
+<img src="plots/slp_training_curves.png" width="60%" alt="SLP training curves">
 
 </td>
 <td align="center" width="50%">
 
 **4. Activation Comparison**
 
-<img src="plots/activation_comparison.png" width="100%" alt="Activation function comparison">
+<img src="plots/activation_comparison.png" width="60%" alt="Activation function comparison">
 
 </td>
 </tr>
@@ -516,14 +516,14 @@ The following gallery brings together the main visualizations produced throughou
 
 **5. Early Stopping Curve**
 
-<img src="plots/early_stopping_curve.png" width="100%" alt="Early stopping curve">
+<img src="plots/early_stopping_curve.png" width="60%" alt="Early stopping curve">
 
 </td>
 <td align="center" width="50%">
 
 **6. Early Stopping vs Normal**
 
-<img src="plots/early_stopping_vs_normal.png" width="100%" alt="Early stopping and normal training">
+<img src="plots/early_stopping_vs_normal.png" width="60%" alt="Early stopping and normal training">
 
 </td>
 </tr>
@@ -532,14 +532,14 @@ The following gallery brings together the main visualizations produced throughou
 
 **7. Dropout Comparison**
 
-<img src="plots/dropout_comparison.png" width="100%" alt="Dropout comparison">
+<img src="plots/dropout_comparison.png" width="60%" alt="Dropout comparison">
 
 </td>
 <td align="center" width="50%">
 
 **8. Dropout Confusion Matrix**
 
-<img src="plots/dropout_confusion_matrix.png" width="100%" alt="Dropout confusion matrix">
+<img src="plots/dropout_confusion_matrix.png" width="60%" alt="Dropout confusion matrix">
 
 </td>
 </tr>
@@ -555,7 +555,7 @@ The following gallery brings together the main visualizations produced throughou
 
 **10. MLP Confusion Matrix**
 
-<img src="plots/mlp_confusion_matrix.png" width="100%" alt="MLP confusion matrix">
+<img src="plots/mlp_confusion_matrix.png" width="60%" alt="MLP confusion matrix">
 
 </td>
 </tr>
@@ -564,14 +564,14 @@ The following gallery brings together the main visualizations produced throughou
 
 **11. Final Model Confusion Matrix**
 
-<img src="plots/final_model_confusion_matrix.png" width="100%" alt="Final model confusion matrix">
+<img src="plots/final_model_confusion_matrix.png" width="60%" alt="Final model confusion matrix">
 
 </td>
 <td align="center" width="50%">
 
 **12. Regularization Accuracy**
 
-<img src="plots/regularization_accuracy.png" width="100%" alt="Regularization accuracy comparison">
+<img src="plots/regularization_accuracy.png" width="60%" alt="Regularization accuracy comparison">
 
 </td>
 </tr>
@@ -580,7 +580,7 @@ The following gallery brings together the main visualizations produced throughou
 
 **13. Regularization Comparison**
 
-<img src="plots/regularization_comparison.png" width="100%" alt="Regularization comparison">
+<img src="plots/regularization_comparison.png" width="60%" alt="Regularization comparison">
 
 </td>
 <td align="center" width="50%">
