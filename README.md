@@ -318,7 +318,7 @@ The project's previously recorded test accuracy was approximately **95.61%**. Ve
 ### Training History
 
 <p align="center">
-  <img src="plots/training_history.png" alt="Training and Validation Accuracy and Loss" width="360">
+  <img src="plots/"C:\Users\Umang\Desktop\DL_PR1\plots\slp_training_curves.png"" alt="Training and Validation Accuracy and Loss" width="360">
 </p>
 
 <p align="center"><sub>Figure 4 — Training and validation performance across epochs</sub></p>
