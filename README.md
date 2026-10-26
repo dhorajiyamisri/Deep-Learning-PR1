@@ -1,72 +1,85 @@
 # 🧬 Breast Cancer Classification Using Deep Learning
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=Breast+Cancer+Classification;Artificial+Neural+Network+(ANN);Deep+Learning+%7C+Python+%7C+TensorFlow" alt="Animated project title" />
+  <img src="https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Deep%20Learning-ANN-orange" alt="Deep Learning">
+  <img src="https://img.shields.io/badge/TensorFlow-Keras-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow">
+  <img src="https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white" alt="Scikit-learn">
+  <img src="https://img.shields.io/badge/Streamlit-Application-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit">
 </p>
 
 <p align="center">
-  An end-to-end Deep Learning project that explores Artificial Neural Networks for classifying breast cancer diagnostic data.
+  <b>An end-to-end Deep Learning project for classifying breast cancer diagnostic data using an Artificial Neural Network (ANN).</b>
 </p>
 
 <p align="center">
-  <a href="https://deep-learning-pr1-cozrkcexkgrurrcc3zrjeg.streamlit.app/">
-    <img src="https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo"/>
-  </a>
-  <a href="https://github.com/dhorajiyamisri/Deep-Learning-PR1">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/>
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/TensorFlow-Deep_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
-  <img src="https://img.shields.io/badge/Streamlit-Web_App-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
-  <img src="https://img.shields.io/badge/Scikit--learn-ML-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="Scikit-learn"/>
-  <img src="https://img.shields.io/badge/Status-Academic_Project-blue?style=flat-square" alt="Project Status"/>
+  <a href="https://github.com/dhorajiyamisri/Deep-Learning-PR1">GitHub Repository</a> •
+  <a href="https://deep-learning-pr1-cozrkcexkgrurrcc3zrjeg.streamlit.app/">Live Demo</a>
 </p>
 
 ---
 
-## 📌 Table of Contents
+## 📑 Table of Contents
 
-- [Overview](#-overview)
+- [Project Overview](#-project-overview)
+- [Problem Statement](#-problem-statement)
 - [Project Objectives](#-project-objectives)
-- [Dataset](#-dataset)
+- [Dataset Description](#-dataset-description)
+- [Data Dictionary](#-data-dictionary)
 - [Technologies Used](#-technologies-used)
-- [Deep Learning Workflow](#-deep-learning-workflow)
+- [Project Workflow](#-project-workflow)
+- [Exploratory Data Analysis](#-exploratory-data-analysis)
+- [Data Preprocessing](#-data-preprocessing)
+- [Deep Learning Model](#-deep-learning-model)
 - [Model Experiments](#-model-experiments)
-- [Model Performance](#-model-performance)
+- [Model Evaluation](#-model-evaluation)
+- [Evaluation Visualizations](#-evaluation-visualizations)
 - [Project Structure](#-project-structure)
 - [Installation and Setup](#-installation-and-setup)
-- [Run the Streamlit Application](#-run-the-streamlit-application)
-- [Saved Model](#-saved-model)
-- [Future Improvements](#-future-improvements)
-- [Limitations and Disclaimer](#-limitations-and-disclaimer)
+- [Run the Application](#-run-the-application)
+- [Key Learnings](#-key-learnings)
+- [Limitations and Future Improvements](#-limitations-and-future-improvements)
+- [Conclusion](#-conclusion)
 - [Author](#-author)
 
 ---
 
-## 🔍 Overview
+## 🔍 Project Overview
 
-Breast Cancer Classification Using Deep Learning is an academic machine learning project developed to understand how Artificial Neural Networks (ANNs) can learn patterns from numerical diagnostic features.
+Breast Cancer Classification Using Deep Learning is an academic project designed to explore how Artificial Neural Networks (ANNs) can learn patterns from numerical diagnostic data.
 
-The project uses the Breast Cancer Wisconsin Diagnostic dataset available through Scikit-learn. It explores data analysis, preprocessing, neural network training, regularization, model evaluation, and saving a trained model for use in a Streamlit application.
+The project uses the **Breast Cancer Wisconsin Diagnostic dataset** available through Scikit-learn. It follows a machine learning workflow that includes data exploration, preprocessing, neural network experiments, model evaluation, model saving, and application development.
 
-The goal is to build a complete learning workflow that connects **data preprocessing, deep learning experiments, model evaluation, and web application development**.
+The objective is to classify diagnostic observations into two categories:
+
+- **Malignant:** Class 0
+- **Benign:** Class 1
+
+The project also explores fundamental deep learning concepts such as perceptrons, multilayer neural networks, activation functions, loss functions, regularization, and model evaluation.
+
+> **Important:** This project is developed for educational purposes. Its predictions are not a substitute for professional medical diagnosis.
+
+## 🎯 Problem Statement
+
+Breast cancer diagnostic datasets contain multiple numerical measurements that can be difficult to evaluate through manual pattern inspection alone.
+
+This project explores whether a neural network can learn useful patterns from these measurements and classify observations into malignant and benign categories.
+
+The task is a **binary classification problem**.
 
 ## 🎯 Project Objectives
 
-- Understand and explore a real-world diagnostic dataset.
+- Understand the structure of a diagnostic dataset.
 - Perform exploratory data analysis (EDA).
-- Prepare numerical features for neural network training.
-- Understand single-layer and multilayer neural network concepts.
-- Compare activation functions and training approaches.
-- Explore early stopping, dropout, and regularization.
-- Evaluate classification performance using appropriate metrics.
-- Save the trained model and feature scaler.
-- Develop a web interface using Streamlit.
+- Identify patterns and relationships between numerical features.
+- Prepare features for neural network training.
+- Understand perceptrons and multilayer perceptrons.
+- Experiment with neural network training and regularization.
+- Evaluate classification performance using suitable metrics.
+- Save the trained model and preprocessing scaler.
+- Explore model predictions through a Streamlit interface.
 
-## 📊 Dataset
+## 📊 Dataset Description
 
 **Dataset:** Breast Cancer Wisconsin Diagnostic Dataset
 
@@ -78,106 +91,236 @@ The goal is to build a complete learning workflow that connects **data preproces
 | Input features | 30 |
 | Target classes | 2 |
 | Feature type | Numerical |
-| Learning task | Binary classification |
+| Problem type | Binary classification |
+| Dataset loading | `sklearn.datasets.load_breast_cancer` |
 
-### Target classes
+The dataset contains numerical measurements derived from cell nuclei in breast mass samples.
 
-- **Malignant (0):** The malignant class in the original Scikit-learn dataset.
-- **Benign (1):** The benign class in the original Scikit-learn dataset.
+Examples of feature groups include:
 
-The dataset contains numerical measurements derived from cell nuclei, including properties related to radius, texture, perimeter, area, smoothness, compactness, concavity, symmetry, and fractal dimension.
+- Radius
+- Texture
+- Perimeter
+- Area
+- Smoothness
+- Compactness
+- Concavity
+- Symmetry
+- Fractal dimension
 
-### Data preprocessing
+### Target Classes
 
-The project workflow includes:
+| Label | Class | Meaning |
+|---|---|---|
+| 0 | Malignant | Malignant class in the original Scikit-learn dataset |
+| 1 | Benign | Benign class in the original Scikit-learn dataset |
 
-- Inspecting the dataset and its structure.
-- Exploring feature distributions and relationships.
-- Separating input features and target labels.
-- Splitting the data into training and testing sets.
-- Applying `StandardScaler` to standardize input features.
+The class encoding is based on the original Scikit-learn dataset.
 
-The scaler fitted during training is saved and reused for prediction inputs.
+## 📚 Data Dictionary
+
+The dataset contains 30 numerical input features. The following table describes representative feature groups.
+
+| Feature Group | Description |
+|---|---|
+| `radius` | Measurements related to nucleus radius |
+| `texture` | Variation in grayscale intensity |
+| `perimeter` | Boundary measurement |
+| `area` | Area-related measurement |
+| `smoothness` | Local variation in radius lengths |
+| `compactness` | Compactness-related measurement |
+| `concavity` | Severity of concave portions |
+| `concave points` | Number or extent of concave portions |
+| `symmetry` | Symmetry-related measurement |
+| `fractal dimension` | Complexity of the boundary |
+
+The dataset includes mean, standard error, and worst-value measurements for the feature groups. The target variable represents the diagnostic class.
 
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
 | Python | Main programming language |
-| NumPy | Numerical operations |
+| NumPy | Numerical computation |
 | Pandas | Data handling and analysis |
 | Matplotlib | Data visualization |
 | Seaborn | Statistical visualization |
-| Scikit-learn | Dataset, preprocessing, splitting, and evaluation |
-| TensorFlow / Keras | Neural network development and training |
-| Joblib | Saving and loading the scaler |
-| Streamlit | Interactive web application |
-| Jupyter Notebook | Experiments and documentation |
+| Scikit-learn | Dataset loading, preprocessing, splitting, and evaluation |
+| TensorFlow / Keras | Neural network development |
+| Joblib | Saving and loading preprocessing objects |
+| Jupyter Notebook | Experimentation and documentation |
+| Streamlit | Interactive web interface |
 | Git and GitHub | Version control and project hosting |
 
-## 🧠 Deep Learning Workflow
+## 🔄 Project Workflow
 
 ```text
-Breast Cancer Dataset
-        |
-        v
+Dataset Loading
+      ↓
+Data Inspection and Exploration
+      ↓
 Exploratory Data Analysis
-        |
-        v
+      ↓
 Feature and Target Separation
-        |
-        v
+      ↓
 Train-Test Split
-        |
-        v
-StandardScaler Preprocessing
-        |
-        v
+      ↓
+Feature Scaling
+      ↓
 Neural Network Experiments
-        |
-        v
-Model Evaluation
-        |
-        v
-Save Trained Model and Scaler
-        |
-        v
+      ↓
+Model Training and Validation
+      ↓
+Performance Evaluation
+      ↓
+Save Final Model and Scaler
+      ↓
 Streamlit Application
-        |
-        v
+      ↓
 Prediction Output
 ```
 
+## 🔎 Exploratory Data Analysis
+
+Exploratory Data Analysis helps understand the dataset before model training.
+
+The analysis can include:
+
+- Checking the number of rows and columns.
+- Inspecting data types and summary statistics.
+- Checking for missing values.
+- Studying the distribution of target classes.
+- Exploring feature distributions.
+- Examining relationships between selected features.
+
+### EDA Visualizations
+
+The following section can display small charts generated from the notebook.
+
+<p align="center">
+  <img src="plots/class_distribution.png" alt="Class Distribution" width="360">
+</p>
+
+<p align="center"><sub>Figure 1 — Distribution of diagnostic classes</sub></p>
+
+<p align="center">
+  <img src="plots/correlation_heatmap.png" alt="Feature Correlation Heatmap" width="360">
+</p>
+
+<p align="center"><sub>Figure 2 — Correlation between numerical features</sub></p>
+
+**Note:** Save the corresponding charts in the `plots/` folder using these filenames before publishing the README. If a chart has not been generated, remove its image section until the file is available.
+
+## 🧹 Data Preprocessing
+
+Data preprocessing prepares numerical features for neural network training.
+
+The workflow includes:
+
+1. Loading the dataset.
+2. Separating the input features from the target labels.
+3. Splitting observations into training and testing sets.
+4. Standardizing numerical features using `StandardScaler`.
+5. Using the fitted scaler to transform the test data consistently.
+
+### Why Standardization?
+
+Neural networks can be sensitive to differences in feature scales. Standardization transforms numerical features to a comparable scale.
+
+The scaler must be fitted on the training data only. The same fitted scaler is then used to transform test data and future prediction inputs.
+
+## 🧠 Deep Learning Model
+
+The project explores Artificial Neural Networks and their role in classification.
+
+### 1. Perceptron
+
+A perceptron is a basic artificial neuron that combines input values with weights and a bias before applying an activation function.
+
+### 2. Multilayer Perceptron (MLP)
+
+An MLP contains an input layer, one or more hidden layers, and an output layer.
+
+The hidden layers learn relationships between the input features. The output layer produces a value used to classify an observation.
+
+### 3. Activation Functions
+
+Activation functions help neural networks learn nonlinear patterns.
+
+Examples studied in deep learning include:
+
+- ReLU
+- Sigmoid
+- Other activation functions explored in the notebook
+
+The exact activation functions used in the final model should be confirmed from the model architecture in `DL_PR1.ipynb`.
+
+### 4. Loss Function and Optimization
+
+A loss function measures the difference between the model's predictions and the actual labels.
+
+During training, an optimizer updates the model weights to reduce the loss.
+
+### 5. Regularization
+
+Techniques such as dropout, early stopping, and L1/L2 regularization can help control overfitting. Their effectiveness depends on the model configuration and dataset.
+
 ## 🧪 Model Experiments
 
-The practical notebook explores fundamental neural network concepts and model improvement techniques.
+The practical notebook explores fundamental neural network concepts and techniques for improving model performance.
 
 | Experiment | Purpose |
 |---|---|
 | Single-Layer Perceptron | Understand basic classification |
-| Multilayer Perceptron (MLP) | Learn nonlinear patterns |
-| Activation Function Comparison | Study neural network activation choices |
-| Early Stopping | Reduce unnecessary training and help control overfitting |
-| Dropout | Explore regularization through randomly deactivated units |
-| L1 and L2 Regularization | Study penalties on model weights |
-| Final Combined Model | Evaluate the selected neural network configuration |
+| Multilayer Perceptron | Learn more complex patterns |
+| Activation Functions | Explore activation choices |
+| Early Stopping | Stop training when validation performance no longer improves |
+| Dropout | Study regularization by temporarily deactivating units |
+| L1/L2 Regularization | Explore weight penalties |
+| Final Combined Model | Evaluate the selected model configuration |
 
-The exact configuration and results for each experiment should be taken from the corresponding notebook cells.
+The final architecture, hyperparameters, and experiment results should be interpreted from the notebook's actual outputs.
 
-## 📈 Model Performance
+## 📈 Model Evaluation
 
-The final model evaluation previously recorded in the project was approximately **95.61% accuracy**.
+Accuracy alone does not provide a complete picture of classification performance. Precision, recall, F1-score, and a confusion matrix can provide additional information about classification errors.
 
-Accuracy alone does not fully describe a classifier's performance. The notebook should also be used to review the confusion matrix, precision, recall, and F1-score.
+| Metric | What It Measures |
+|---|---|
+| Accuracy | Fraction of predictions that are correct |
+| Precision | Fraction of positive predictions that are correct |
+| Recall | Fraction of actual positive cases correctly identified |
+| F1-score | Harmonic mean of precision and recall |
+| Confusion Matrix | Counts of correct and incorrect predictions by class |
+
+The project's previously recorded test accuracy was approximately **95.61%**. Verify this figure against the final evaluation output in `DL_PR1.ipynb` before using it in a formal report.
 
 | Metric | Result |
 |---|---|
-| Test accuracy | Approximately 95.61% |
-| Precision | Refer to notebook classification report |
-| Recall | Refer to notebook classification report |
-| F1-score | Refer to notebook classification report |
+| Test accuracy | Approximately 95.61% — verify notebook |
+| Precision | To be confirmed from the classification report |
+| Recall | To be confirmed from the classification report |
+| F1-score | To be confirmed from the classification report |
 
-*Recheck the final evaluation output in `DL_PR1.ipynb` before using these figures in a formal submission or presentation.*
+## 📊 Evaluation Visualizations
+
+### Confusion Matrix
+
+<p align="center">
+  <img src="plots/confusion_matrix.png" alt="Model Confusion Matrix" width="360">
+</p>
+
+<p align="center"><sub>Figure 3 — Actual versus predicted diagnostic classes</sub></p>
+
+### Training History
+
+<p align="center">
+  <img src="plots/training_history.png" alt="Training and Validation Accuracy and Loss" width="360">
+</p>
+
+<p align="center"><sub>Figure 4 — Training and validation performance across epochs</sub></p>
+
+These image paths are placeholders until the charts are generated and committed to the repository. Keep only the charts that actually exist. A chart should represent the real notebook results rather than illustrative or fabricated values.
 
 ## 📁 Project Structure
 
@@ -185,107 +328,143 @@ Accuracy alone does not fully describe a classifier's performance. The notebook 
 Deep-Learning-PR1/
 │
 ├── DL_PR1.ipynb
-├── app.py
-├── requirements.txt
+├── DL_PR1.html
 ├── README.md
+├── requirements.txt
 │
 ├── models/
 │   ├── final_model.keras
 │   └── scaler.pkl
 │
 ├── plots/
-│   └── Add saved evaluation charts here
+│   ├── class_distribution.png
+│   ├── correlation_heatmap.png
+│   ├── confusion_matrix.png
+│   └── training_history.png
 │
-└── .gitignore
+└── app.py
 ```
 
-*The structure above describes the intended project organization. Keep only the files and folders that actually exist in your repository.*
+**Important:** This is the intended structure. Keep filenames in the README aligned with the actual files in your repository. The `app.py` file and each plot must exist before they are listed as available project files.
+
+### Main Project Files
+
+| File or Folder | Description |
+|---|---|
+| `DL_PR1.ipynb` | Notebook containing data analysis and deep learning experiments |
+| `DL_PR1.html` | Exported notebook, if included |
+| `models/` | Saved model and scaler |
+| `plots/` | Evaluation and EDA charts |
+| `requirements.txt` | Python package dependencies |
+| `app.py` | Streamlit application entry point, if included |
 
 ## ⚙️ Installation and Setup
 
-### 1. Clone the repository
+### Prerequisites
+
+- Python 3.12, or a version supported by all installed dependencies
+- Git
+- Visual Studio Code or another Python editor
+
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/dhorajiyamisri/Deep-Learning-PR1.git
+```
+
+### Step 2: Open the Project
+
+```bash
 cd Deep-Learning-PR1
 ```
 
-### 2. Create a virtual environment
+### Step 3: Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate it on Windows PowerShell:
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-### 3. Install dependencies
+Activate it on Windows:
 
 ```bash
-python -m pip install --upgrade pip
+.venv\Scripts\activate
+```
+
+### Step 4: Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-Make sure your installed TensorFlow version is compatible with your Python version and operating system.
+If TensorFlow installation fails, check Python-version compatibility and the relevant TensorFlow installation instructions.
 
-## 🚀 Run the Streamlit Application
-
-From the project root directory, run:
+### Step 5: Open the Notebook
 
 ```bash
-python -m streamlit run app.py
+jupyter notebook DL_PR1.ipynb
 ```
 
-Streamlit will display a local URL in the terminal, usually:
+Run the notebook cells in order to reproduce the experiments, subject to the installed dependencies and available saved files.
 
-```text
-http://localhost:8501
+## 🌐 Run the Application
+
+If `app.py` is present and configured to load the saved model and scaler, start the Streamlit application with:
+
+```bash
+streamlit run app.py
 ```
 
-Open that address in your browser to access the application.
+The application should open in your browser.
 
-### Live Demo
+The deployed demo link is:
 
-Try the deployed application:
+**[Open Breast Cancer Classification Demo](https://deep-learning-pr1-cozrkcexkgrurrcc3zrjeg.streamlit.app/)**
 
-**[Open Breast Cancer Classification App](https://deep-learning-pr1-cozrkcexkgrurrcc3zrjeg.streamlit.app/)**
+If the demo is unavailable or access is restricted, use the notebook or run the application locally.
 
-If the live application requests access or displays an error, check the deployment and account permissions before sharing the link publicly.
+## 💡 Key Learnings
 
-## 💾 Saved Model
+Through this project, I explored:
 
-The project uses two saved artifacts:
+- The difference between machine learning and deep learning.
+- How perceptrons and multilayer neural networks work.
+- Feature scaling and train-test splitting.
+- Neural network training and loss minimization.
+- Regularization and overfitting control.
+- Classification metrics and confusion matrices.
+- Saving a trained model for reuse.
+- Connecting a machine learning model to a Streamlit interface.
+- Maintaining and documenting a project using GitHub.
 
-- `models/final_model.keras` — the trained TensorFlow/Keras model.
-- `models/scaler.pkl` — the fitted Scikit-learn feature scaler.
+## 🚀 Limitations and Future Improvements
 
-The application should apply the same preprocessing used during training before passing inputs to the model.
+### Current Limitations
 
-**Important:** The feature names, input order, scaling method, and output interpretation in the application must match the training notebook.
+- The dataset is relatively small compared with real-world clinical datasets.
+- Performance on this dataset does not guarantee performance on new populations or clinical settings.
+- Model evaluation depends on the selected split, preprocessing, and training configuration.
+- A prediction from this project must not be treated as a medical diagnosis.
 
-## 🔮 Future Improvements
+### Future Improvements
 
-- Add clear input validation and more helpful error messages.
-- Improve the user interface and accessibility.
-- Display a confusion matrix and evaluation charts.
-- Add a model comparison summary based on measured results.
-- Improve automated testing and deployment checks.
-- Document model limitations and dataset provenance more thoroughly.
+- Add cross-validation for more robust evaluation.
+- Compare multiple neural network architectures.
+- Include a detailed classification report and ROC curve.
+- Improve the application interface and input validation.
+- Add automated tests and a reproducible training pipeline.
+- Evaluate generalization on independent, appropriately validated data.
 
-## ⚠️ Limitations and Disclaimer
+## ✅ Conclusion
 
-This project is intended for **educational and demonstration purposes only**. It is not a clinically validated diagnostic system and must not be used to diagnose, rule out, or make treatment decisions about breast cancer.
+This project demonstrates an educational end-to-end workflow for breast cancer classification using deep learning. It connects numerical data exploration and preprocessing with neural network experiments, model evaluation, saved artifacts, and a potential web application.
 
-Model predictions depend on the dataset, preprocessing, and training procedure. Real medical decisions require qualified healthcare professionals and appropriate clinical testing.
+The project helped strengthen my understanding of Artificial Neural Networks, binary classification, model evaluation, and practical machine learning workflows.
 
 ## 👩‍💻 Author
 
 **Misari Dhorajiya**
 
-Deep Learning | Artificial Intelligence | Machine Learning | Data Science
+Aspiring Data Science and AI/ML professional, currently looking for a Data Science / AI Internship.
 
 - **GitHub:** [@dhorajiyamisri](https://github.com/dhorajiyamisri)
 - **Project Repository:** [Deep-Learning-PR1](https://github.com/dhorajiyamisri/Deep-Learning-PR1)
@@ -293,9 +472,5 @@ Deep Learning | Artificial Intelligence | Machine Learning | Data Science
 ---
 
 <p align="center">
-  <b>Built with Python, TensorFlow, and curiosity for Deep Learning.</b>
-</p>
-
-<p align="center">
-  ⭐ If you find this project useful for learning, consider starring the repository.
+  <i>Built as a learning project to explore Deep Learning, neural networks, and practical model development.</i>
 </p>
