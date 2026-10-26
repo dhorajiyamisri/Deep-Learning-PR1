@@ -17,7 +17,6 @@
 
 <p align="center">
   <a href="https://github.com/dhorajiyamisri/Deep-Learning-PR1">GitHub Repository</a> •
-  <a href="https://deep-learning-pr1-cozrkcexkgrurrcc3zrjeg.streamlit.app/">Live Demo</a>
 </p>
 
 ---
