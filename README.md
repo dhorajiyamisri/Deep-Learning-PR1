@@ -289,7 +289,6 @@ Deep Learning | Artificial Intelligence | Machine Learning | Data Science
 
 - **GitHub:** [@dhorajiyamisri](https://github.com/dhorajiyamisri)
 - **Project Repository:** [Deep-Learning-PR1](https://github.com/dhorajiyamisri/Deep-Learning-PR1)
-- **Live Application:** [Streamlit Demo](https://deep-learning-pr1-cozrkcexkgrurrcc3zrjeg.streamlit.app/)
 
 ---
 
