@@ -310,7 +310,7 @@ The project's previously recorded test accuracy was approximately **95.61%**. Ve
 ### Confusion Matrix
 
 <p align="center">
-  <img src="plots/confusion_matrix.png" alt="Model Confusion Matrix" width="360">
+  <img src="plots/mlp_confusion_matrix.png" alt="Model Confusion Matrix" width="360">
 </p>
 
 <p align="center"><sub>Figure 3 — Actual versus predicted diagnostic classes</sub></p>
@@ -409,21 +409,6 @@ jupyter notebook DL_PR1.ipynb
 
 Run the notebook cells in order to reproduce the experiments, subject to the installed dependencies and available saved files.
 
-## 🌐 Run the Application
-
-If `app.py` is present and configured to load the saved model and scaler, start the Streamlit application with:
-
-```bash
-streamlit run app.py
-```
-
-The application should open in your browser.
-
-The deployed demo link is:
-
-**[Open Breast Cancer Classification Demo](https://deep-learning-pr1-cozrkcexkgrurrcc3zrjeg.streamlit.app/)**
-
-If the demo is unavailable or access is restricted, use the notebook or run the application locally.
 
 ## 💡 Key Learnings
 
