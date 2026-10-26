@@ -1,7 +1,7 @@
 # 🧬 Breast Cancer Classification Using Deep Learning
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=Breast+Cancer+Classification;Artificial+Neural+Network+(ANN);Deep+Learning+%7C+Python+%7C+TensorFlow" alt="Animated project title" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=Breast+Cancer+Classification;Artificial+Neural+Network+(ANN);Deep+Learning+%7C+Python+%7C+TensorFlow" alt="Animated project title">
 </p>
 
 <p align="center">
@@ -9,14 +9,16 @@
   <img src="https://img.shields.io/badge/Deep%20Learning-ANN-orange" alt="Deep Learning">
   <img src="https://img.shields.io/badge/TensorFlow-Keras-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow">
   <img src="https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white" alt="Scikit-learn">
+  <img src="https://img.shields.io/badge/Project-PR1-8A2BE2" alt="Project PR1">
 </p>
 
 <p align="center">
-  <b>An end-to-end Deep Learning project for classifying breast cancer diagnostic data using an Artificial Neural Network (ANN).</b>
+  <b>An end-to-end Deep Learning project exploring breast cancer classification using Artificial Neural Networks.</b>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dhorajiyamisri/Deep-Learning-PR1">GitHub Repository</a> •
+  <a href="https://github.com/dhorajiyamisri/Deep-Learning-PR1">📂 View Repository</a> •
+  <a href="https://github.com/dhorajiyamisri">👩‍💻 GitHub Profile</a>
 </p>
 
 ---
@@ -25,20 +27,20 @@
 
 - [Project Overview](#-project-overview)
 - [Problem Statement](#-problem-statement)
-- [Project Objectives](#-project-objectives)
+- [Objectives](#-objectives)
 - [Dataset Description](#-dataset-description)
 - [Data Dictionary](#-data-dictionary)
 - [Technologies Used](#-technologies-used)
 - [Project Workflow](#-project-workflow)
 - [Exploratory Data Analysis](#-exploratory-data-analysis)
 - [Data Preprocessing](#-data-preprocessing)
-- [Deep Learning Model](#-deep-learning-model)
+- [Deep Learning Concepts](#-deep-learning-concepts)
 - [Model Experiments](#-model-experiments)
 - [Model Evaluation](#-model-evaluation)
-- [Evaluation Visualizations](#-evaluation-visualizations)
+- [Visualization Gallery](#-visualization-gallery)
 - [Project Structure](#-project-structure)
 - [Installation and Setup](#-installation-and-setup)
-- [Run the Application](#-run-the-application)
+- [How to Run](#-how-to-run)
 - [Key Learnings](#-key-learnings)
 - [Limitations and Future Improvements](#-limitations-and-future-improvements)
 - [Conclusion](#-conclusion)
@@ -48,44 +50,44 @@
 
 ## 🔍 Project Overview
 
-Breast Cancer Classification Using Deep Learning is an academic project designed to explore how Artificial Neural Networks (ANNs) can learn patterns from numerical diagnostic data.
+**Breast Cancer Classification Using Deep Learning** is an educational project that explores how Artificial Neural Networks (ANNs) can learn patterns from numerical diagnostic data.
 
-The project uses the **Breast Cancer Wisconsin Diagnostic dataset** available through Scikit-learn. It follows a machine learning workflow that includes data exploration, preprocessing, neural network experiments, model evaluation, model saving, and application development.
+The project uses the Breast Cancer Wisconsin Diagnostic dataset provided by Scikit-learn. It covers data exploration, preprocessing, neural network experiments, model evaluation, visualization, and saving trained model artifacts.
 
-The objective is to classify diagnostic observations into two categories:
+The classification task predicts one of two target classes:
 
-- **Malignant:** Class 0
-- **Benign:** Class 1
+- **Malignant — Class 0**
+- **Benign — Class 1**
 
-The project also explores fundamental deep learning concepts such as perceptrons, multilayer neural networks, activation functions, loss functions, regularization, and model evaluation.
+The project also explores important deep learning concepts, including perceptrons, multilayer perceptrons, activation functions, loss functions, gradient descent, early stopping, dropout, and regularization.
 
-> **Important:** This project is developed for educational purposes. Its predictions are not a substitute for professional medical diagnosis.
+> ⚠️ **Disclaimer:** This project is for educational purposes only. Its predictions must not be used as a substitute for professional medical diagnosis.
 
 ## 🎯 Problem Statement
 
-Breast cancer diagnostic datasets contain multiple numerical measurements that can be difficult to evaluate through manual pattern inspection alone.
+Diagnostic datasets contain numerical measurements that may reveal patterns associated with different diagnostic classes.
 
-This project explores whether a neural network can learn useful patterns from these measurements and classify observations into malignant and benign categories.
+The objective of this project is to train a neural network that learns from these measurements and predicts whether a sample belongs to the malignant or benign class.
 
-The task is a **binary classification problem**.
+This is a **supervised binary classification problem**.
 
-## 🎯 Project Objectives
+## 🎯 Objectives
 
-- Understand the structure of a diagnostic dataset.
+- Understand the structure of a real-world diagnostic dataset.
 - Perform exploratory data analysis (EDA).
-- Identify patterns and relationships between numerical features.
+- Analyze feature distributions and correlations.
 - Prepare features for neural network training.
 - Understand perceptrons and multilayer perceptrons.
-- Experiment with neural network training and regularization.
-- Evaluate classification performance using suitable metrics.
+- Experiment with different neural network configurations.
+- Explore training optimization and regularization techniques.
+- Evaluate the model using appropriate classification metrics.
+- Visualize model performance using plots.
 - Save the trained model and preprocessing scaler.
-- Explore model predictions through a Streamlit interface.
 
 ## 📊 Dataset Description
 
-**Dataset:** Breast Cancer Wisconsin Diagnostic Dataset
-
-**Source:** Scikit-learn built-in dataset.
+**Dataset:** Breast Cancer Wisconsin Diagnostic Dataset  
+**Source:** `sklearn.datasets.load_breast_cancer`
 
 | Property | Description |
 |---|---|
@@ -93,50 +95,38 @@ The task is a **binary classification problem**.
 | Input features | 30 |
 | Target classes | 2 |
 | Feature type | Numerical |
+| Learning type | Supervised learning |
 | Problem type | Binary classification |
-| Dataset loading | `sklearn.datasets.load_breast_cancer` |
 
-The dataset contains numerical measurements derived from cell nuclei in breast mass samples.
+The dataset contains measurements derived from cell nuclei. Features represent characteristics such as radius, texture, perimeter, area, smoothness, compactness, concavity, symmetry, and fractal dimension.
 
-Examples of feature groups include:
+### Target Class Mapping
 
-- Radius
-- Texture
-- Perimeter
-- Area
-- Smoothness
-- Compactness
-- Concavity
-- Symmetry
-- Fractal dimension
-
-### Target Classes
-
-| Label | Class | Meaning |
+| Target value | Class | Description |
 |---|---|---|
-| 0 | Malignant | Malignant class in the original Scikit-learn dataset |
-| 1 | Benign | Benign class in the original Scikit-learn dataset |
+| 0 | Malignant | Malignant diagnostic class |
+| 1 | Benign | Benign diagnostic class |
 
-The class encoding is based on the original Scikit-learn dataset.
+This mapping follows the original Scikit-learn dataset.
 
 ## 📚 Data Dictionary
 
-The dataset contains 30 numerical input features. The following table describes representative feature groups.
+The dataset includes 30 numerical features grouped into three measurement categories: mean, standard error, and worst values.
 
 | Feature Group | Description |
 |---|---|
-| `radius` | Measurements related to nucleus radius |
-| `texture` | Variation in grayscale intensity |
-| `perimeter` | Boundary measurement |
-| `area` | Area-related measurement |
-| `smoothness` | Local variation in radius lengths |
-| `compactness` | Compactness-related measurement |
-| `concavity` | Severity of concave portions |
-| `concave points` | Number or extent of concave portions |
-| `symmetry` | Symmetry-related measurement |
-| `fractal dimension` | Complexity of the boundary |
+| Radius | Nucleus radius measurements |
+| Texture | Variation in grayscale intensity |
+| Perimeter | Boundary measurements |
+| Area | Area-related measurements |
+| Smoothness | Variation in local radius lengths |
+| Compactness | Compactness-related measurements |
+| Concavity | Severity of concave portions |
+| Concave points | Measurements of concave boundary points |
+| Symmetry | Symmetry-related measurements |
+| Fractal dimension | Complexity of the boundary |
 
-The dataset includes mean, standard error, and worst-value measurements for the feature groups. The target variable represents the diagnostic class.
+These feature groups help describe the numerical characteristics used by the classifier.
 
 ## 🛠️ Technologies Used
 
@@ -148,10 +138,9 @@ The dataset includes mean, standard error, and worst-value measurements for the 
 | Matplotlib | Data visualization |
 | Seaborn | Statistical visualization |
 | Scikit-learn | Dataset loading, preprocessing, splitting, and evaluation |
-| TensorFlow / Keras | Neural network development |
+| TensorFlow / Keras | Deep learning model development |
 | Joblib | Saving and loading preprocessing objects |
 | Jupyter Notebook | Experimentation and documentation |
-| Streamlit | Interactive web interface |
 | Git and GitHub | Version control and project hosting |
 
 ## 🔄 Project Workflow
@@ -159,7 +148,7 @@ The dataset includes mean, standard error, and worst-value measurements for the 
 ```text
 Dataset Loading
       ↓
-Data Inspection and Exploration
+Data Inspection
       ↓
 Exploratory Data Analysis
       ↓
@@ -175,154 +164,255 @@ Model Training and Validation
       ↓
 Performance Evaluation
       ↓
+Visualization and Comparison
+      ↓
 Save Final Model and Scaler
       ↓
-Streamlit Application
-      ↓
-Prediction Output
+Results and Documentation
 ```
 
 ## 🔎 Exploratory Data Analysis
 
 Exploratory Data Analysis helps understand the dataset before model training.
 
-The analysis can include:
+The analysis includes:
 
-- Checking the number of rows and columns.
-- Inspecting data types and summary statistics.
-- Checking for missing values.
-- Studying the distribution of target classes.
-- Exploring feature distributions.
-- Examining relationships between selected features.
+- Inspecting the dataset dimensions.
+- Reviewing feature names and data types.
+- Checking missing values.
+- Examining class distribution.
+- Exploring relationships between numerical features.
+- Visualizing feature correlations.
 
-### EDA Visualizations
-
-The following section can display small charts generated from the notebook.
+### 1. Class Distribution
 
 <p align="center">
   <img src="plots/class_distribution.png" alt="Class Distribution" width="360">
 </p>
 
-<p align="center"><sub>Figure 1 — Distribution of diagnostic classes</sub></p>
+<p align="center"><sub>Figure 1 — Distribution of malignant and benign classes</sub></p>
+
+### 2. Feature Correlation Heatmap
 
 <p align="center">
   <img src="plots/correlation_heatmap.png" alt="Feature Correlation Heatmap" width="360">
 </p>
 
-<p align="center"><sub>Figure 2 — Correlation between numerical features</sub></p>
-
-**Note:** Save the corresponding charts in the `plots/` folder using these filenames before publishing the README. If a chart has not been generated, remove its image section until the file is available.
+<p align="center"><sub>Figure 2 — Correlation among numerical features</sub></p>
 
 ## 🧹 Data Preprocessing
 
-Data preprocessing prepares numerical features for neural network training.
+Preprocessing prepares the dataset for neural network training.
 
 The workflow includes:
 
 1. Loading the dataset.
-2. Separating the input features from the target labels.
-3. Splitting observations into training and testing sets.
-4. Standardizing numerical features using `StandardScaler`.
-5. Using the fitted scaler to transform the test data consistently.
+2. Separating input features and target labels.
+3. Splitting the dataset into training and testing subsets.
+4. Applying `StandardScaler` to numerical features.
+5. Using the same fitted scaler to transform test data.
 
 ### Why Standardization?
 
-Neural networks can be sensitive to differences in feature scales. Standardization transforms numerical features to a comparable scale.
+Neural networks can be affected when input features have substantially different scales. Standardization makes numerical features more comparable and can help model optimization.
 
-The scaler must be fitted on the training data only. The same fitted scaler is then used to transform test data and future prediction inputs.
+The scaler should be fitted only on the training data to avoid data leakage.
 
-## 🧠 Deep Learning Model
-
-The project explores Artificial Neural Networks and their role in classification.
+## 🧠 Deep Learning Concepts
 
 ### 1. Perceptron
 
-A perceptron is a basic artificial neuron that combines input values with weights and a bias before applying an activation function.
+A perceptron is a basic artificial neuron. It combines input values with weights and a bias, then applies an activation function to produce an output.
 
 ### 2. Multilayer Perceptron (MLP)
 
-An MLP contains an input layer, one or more hidden layers, and an output layer.
-
-The hidden layers learn relationships between the input features. The output layer produces a value used to classify an observation.
+An MLP consists of an input layer, one or more hidden layers, and an output layer. Hidden layers learn patterns from the input features.
 
 ### 3. Activation Functions
 
-Activation functions help neural networks learn nonlinear patterns.
+Activation functions introduce nonlinearity into neural networks.
 
-Examples studied in deep learning include:
+Examples include:
 
 - ReLU
 - Sigmoid
-- Other activation functions explored in the notebook
 
-The exact activation functions used in the final model should be confirmed from the model architecture in `DL_PR1.ipynb`.
+The activation functions used in each experiment should be checked in the notebook.
 
-### 4. Loss Function and Optimization
+### 4. Loss Function
 
-A loss function measures the difference between the model's predictions and the actual labels.
+A loss function measures the difference between predicted outputs and actual labels. The training process aims to reduce this loss.
 
-During training, an optimizer updates the model weights to reduce the loss.
+### 5. Gradient Descent
 
-### 5. Regularization
+Gradient descent updates model parameters to reduce the loss. Common approaches include batch, stochastic, and mini-batch gradient descent.
 
-Techniques such as dropout, early stopping, and L1/L2 regularization can help control overfitting. Their effectiveness depends on the model configuration and dataset.
+### 6. Regularization
+
+Regularization techniques can help reduce overfitting.
+
+Examples include:
+
+- Dropout
+- L1 regularization
+- L2 regularization
+- Early stopping
+
+Their impact depends on the network architecture and training configuration.
 
 ## 🧪 Model Experiments
 
-The practical notebook explores fundamental neural network concepts and techniques for improving model performance.
+The project notebook explores different neural network concepts and techniques.
 
 | Experiment | Purpose |
 |---|---|
-| Single-Layer Perceptron | Understand basic classification |
-| Multilayer Perceptron | Learn more complex patterns |
-| Activation Functions | Explore activation choices |
-| Early Stopping | Stop training when validation performance no longer improves |
-| Dropout | Study regularization by temporarily deactivating units |
-| L1/L2 Regularization | Explore weight penalties |
+| Single-Layer Perceptron (SLP) | Understand basic neural classification |
+| Multilayer Perceptron (MLP) | Learn more complex patterns |
+| Activation Comparison | Explore activation function behavior |
+| Early Stopping | Monitor validation performance during training |
+| Dropout | Study regularization |
+| L1/L2 Regularization | Compare weight-penalty approaches |
 | Final Combined Model | Evaluate the selected model configuration |
 
-The final architecture, hyperparameters, and experiment results should be interpreted from the notebook's actual outputs.
+The experiment plots are presented in the visualization gallery below. Exact conclusions should be based on the corresponding notebook outputs.
 
 ## 📈 Model Evaluation
 
-Accuracy alone does not provide a complete picture of classification performance. Precision, recall, F1-score, and a confusion matrix can provide additional information about classification errors.
+A classification model should be evaluated using more than accuracy alone.
 
-| Metric | What It Measures |
+| Metric | Meaning |
 |---|---|
-| Accuracy | Fraction of predictions that are correct |
-| Precision | Fraction of positive predictions that are correct |
-| Recall | Fraction of actual positive cases correctly identified |
+| Accuracy | Proportion of all predictions that are correct |
+| Precision | Proportion of positive predictions that are correct |
+| Recall | Proportion of actual positive cases correctly identified |
 | F1-score | Harmonic mean of precision and recall |
-| Confusion Matrix | Counts of correct and incorrect predictions by class |
+| Confusion Matrix | Summary of correct and incorrect predictions by class |
 
-The project's previously recorded test accuracy was approximately **95.61%**. Verify this figure against the final evaluation output in `DL_PR1.ipynb` before using it in a formal report.
+The previously recorded test accuracy was approximately **95.61%**. Confirm it against the final model's notebook output before using it as a verified result.
 
 | Metric | Result |
 |---|---|
-| Test accuracy | Approximately 95.61% — verify notebook |
-| Precision | To be confirmed from the classification report |
-| Recall | To be confirmed from the classification report |
-| F1-score | To be confirmed from the classification report |
+| Test accuracy | Approximately 95.61% — verify against notebook |
+| Precision | Refer to the final classification report |
+| Recall | Refer to the final classification report |
+| F1-score | Refer to the final classification report |
 
-## 📊 Evaluation Visualizations
+For medical classification, recall and the types of classification errors are particularly important. Accuracy alone is not sufficient to establish clinical reliability.
 
-### Confusion Matrix
+## 🖼️ Visualization Gallery
 
-<p align="center">
-  <img src="plots/mlp_confusion_matrix.png" alt="Model Confusion Matrix" width="360">
-</p>
+All images below use relative paths from the repository root. The specified width keeps each plot compact on the GitHub README page.
 
-<p align="center"><sub>Figure 3 — Actual versus predicted diagnostic classes</sub></p>
+### A. Exploratory Data Analysis
 
-### Training History
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="plots/class_distribution.png" alt="Class Distribution" width="300">
+      <br><b>Class Distribution</b>
+      <br><sub>Target class balance</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="plots/correlation_heatmap.png" alt="Correlation Heatmap" width="300">
+      <br><b>Correlation Heatmap</b>
+      <br><sub>Feature relationships</sub>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="plots/"C:\Users\Umang\Desktop\DL_PR1\plots\slp_training_curves.png"" alt="Training and Validation Accuracy and Loss" width="360">
-</p>
+### B. Training and Activation Experiments
 
-<p align="center"><sub>Figure 4 — Training and validation performance across epochs</sub></p>
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="plots/slp_training_curves.png" alt="SLP Training Curves" width="300">
+      <br><b>SLP Training Curves</b>
+      <br><sub>Single-layer perceptron training</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="plots/activation_comparison.png" alt="Activation Comparison" width="300">
+      <br><b>Activation Comparison</b>
+      <br><sub>Comparison of activation experiments</sub>
+    </td>
+  </tr>
+</table>
 
-These image paths are placeholders until the charts are generated and committed to the repository. Keep only the charts that actually exist. A chart should represent the real notebook results rather than illustrative or fabricated values.
+### C. Early Stopping Experiments
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="plots/early_stopping_curve.png" alt="Early Stopping Curve" width="300">
+      <br><b>Early Stopping Curve</b>
+      <br><sub>Training and validation behavior</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="plots/early_stopping_vs_normal.png" alt="Early Stopping vs Normal Training" width="300">
+      <br><b>Early Stopping vs Normal</b>
+      <br><sub>Comparison of training approaches</sub>
+    </td>
+  </tr>
+</table>
+
+### D. Dropout Experiments
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="plots/dropout_comparison.png" alt="Dropout Comparison" width="300">
+      <br><b>Dropout Comparison</b>
+      <br><sub>Comparison of dropout configurations</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="plots/dropout_confusion_matrix.png" alt="Dropout Confusion Matrix" width="300">
+      <br><b>Dropout Confusion Matrix</b>
+      <br><sub>Classification results for the dropout experiment</sub>
+    </td>
+  </tr>
+</table>
+
+### E. Model Confusion Matrices
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="plots/slp_confusion_matrix.png" alt="SLP Confusion Matrix" width="300">
+      <br><b>SLP Confusion Matrix</b>
+      <br><sub>Single-layer model predictions</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="plots/mlp_confusion_matrix.png" alt="MLP Confusion Matrix" width="300">
+      <br><b>MLP Confusion Matrix</b>
+      <br><sub>Multilayer model predictions</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="plots/final_model_confusion_matrix.png" alt="Final Model Confusion Matrix" width="320">
+      <br><b>Final Model Confusion Matrix</b>
+      <br><sub>Actual versus predicted classes for the final model</sub>
+    </td>
+  </tr>
+</table>
+
+### F. Regularization Experiments
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="plots/regularization_accuracy.png" alt="Regularization Accuracy" width="300">
+      <br><b>Regularization Accuracy</b>
+      <br><sub>Accuracy across regularization experiments</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="plots/regularization_comparison.png" alt="Regularization Comparison" width="300">
+      <br><b>Regularization Comparison</b>
+      <br><sub>Comparison of regularization approaches</sub>
+    </td>
+  </tr>
+</table>
+
+> **Image path note:** These paths are relative to the repository root. The files must exist in `plots/` and be committed to GitHub with the exact filenames shown above. If any filename differs in the actual folder, update its `src` value to match.
 
 ## 📁 Project Structure
 
@@ -338,35 +428,40 @@ Deep-Learning-PR1/
 │   ├── final_model.keras
 │   └── scaler.pkl
 │
-├── plots/
-│   ├── class_distribution.png
-│   ├── correlation_heatmap.png
-│   ├── confusion_matrix.png
-│   └── training_history.png
-│
-└── app.py
+└── plots/
+    ├── class_distribution.png
+    ├── correlation_heatmap.png
+    ├── slp_training_curves.png
+    ├── activation_comparison.png
+    ├── early_stopping_curve.png
+    ├── early_stopping_vs_normal.png
+    ├── dropout_comparison.png
+    ├── dropout_confusion_matrix.png
+    ├── slp_confusion_matrix.png
+    ├── mlp_confusion_matrix.png
+    ├── final_model_confusion_matrix.png
+    ├── regularization_accuracy.png
+    └── regularization_comparison.png
 ```
 
-**Important:** This is the intended structure. Keep filenames in the README aligned with the actual files in your repository. The `app.py` file and each plot must exist before they are listed as available project files.
-
-### Main Project Files
+### Main Files
 
 | File or Folder | Description |
 |---|---|
-| `DL_PR1.ipynb` | Notebook containing data analysis and deep learning experiments |
+| `DL_PR1.ipynb` | Main notebook containing experiments and analysis |
 | `DL_PR1.html` | Exported notebook, if included |
-| `models/` | Saved model and scaler |
-| `plots/` | Evaluation and EDA charts |
-| `requirements.txt` | Python package dependencies |
-| `app.py` | Streamlit application entry point, if included |
+| `requirements.txt` | Project dependencies |
+| `models/final_model.keras` | Saved final model, if present |
+| `models/scaler.pkl` | Saved preprocessing scaler, if present |
+| `plots/` | EDA and model evaluation visualizations |
 
 ## ⚙️ Installation and Setup
 
 ### Prerequisites
 
-- Python 3.12, or a version supported by all installed dependencies
+- Python version compatible with the project's dependencies
 - Git
-- Visual Studio Code or another Python editor
+- Visual Studio Code or Jupyter Notebook
 
 ### Step 1: Clone the Repository
 
@@ -374,7 +469,7 @@ Deep-Learning-PR1/
 git clone https://github.com/dhorajiyamisri/Deep-Learning-PR1.git
 ```
 
-### Step 2: Open the Project
+### Step 2: Enter the Project Directory
 
 ```bash
 cd Deep-Learning-PR1
@@ -398,54 +493,60 @@ Activate it on Windows:
 pip install -r requirements.txt
 ```
 
-If TensorFlow installation fails, check Python-version compatibility and the relevant TensorFlow installation instructions.
-
 ### Step 5: Open the Notebook
 
 ```bash
 jupyter notebook DL_PR1.ipynb
 ```
 
-Run the notebook cells in order to reproduce the experiments, subject to the installed dependencies and available saved files.
+Run the notebook cells in order to reproduce the data analysis and experiments.
 
+## ▶️ How to Run
+
+1. Clone or download the repository.
+2. Install the dependencies.
+3. Open `DL_PR1.ipynb` in Jupyter Notebook or VS Code.
+4. Execute the notebook cells in sequence.
+5. Review the data visualizations, model experiments, and evaluation outputs.
+6. Check the `models/` folder for saved model artifacts, if generated.
 
 ## 💡 Key Learnings
 
 Through this project, I explored:
 
 - The difference between machine learning and deep learning.
-- How perceptrons and multilayer neural networks work.
+- Perceptrons and multilayer neural networks.
 - Feature scaling and train-test splitting.
-- Neural network training and loss minimization.
-- Regularization and overfitting control.
+- Activation functions and loss functions.
+- Gradient descent and neural network optimization.
+- Early stopping, dropout, and regularization.
 - Classification metrics and confusion matrices.
-- Saving a trained model for reuse.
-- Connecting a machine learning model to a Streamlit interface.
-- Maintaining and documenting a project using GitHub.
+- Saving trained models and preprocessing objects.
+- Documenting machine learning experiments using GitHub.
 
 ## 🚀 Limitations and Future Improvements
 
 ### Current Limitations
 
-- The dataset is relatively small compared with real-world clinical datasets.
-- Performance on this dataset does not guarantee performance on new populations or clinical settings.
-- Model evaluation depends on the selected split, preprocessing, and training configuration.
-- A prediction from this project must not be treated as a medical diagnosis.
+- The dataset is small compared with the variety of real-world clinical data.
+- Performance on this dataset does not guarantee performance on unseen populations.
+- Results depend on the train-test split and training configuration.
+- The project is educational and has not established clinical validity.
 
 ### Future Improvements
 
 - Add cross-validation for more robust evaluation.
-- Compare multiple neural network architectures.
-- Include a detailed classification report and ROC curve.
-- Improve the application interface and input validation.
-- Add automated tests and a reproducible training pipeline.
-- Evaluate generalization on independent, appropriately validated data.
+- Compare additional neural network architectures.
+- Include ROC curves and precision-recall curves.
+- Document all experiments with verified metrics.
+- Add automated tests and reproducible training configurations.
+- Validate generalization using independent, appropriately sourced data.
 
 ## ✅ Conclusion
 
-This project demonstrates an educational end-to-end workflow for breast cancer classification using deep learning. It connects numerical data exploration and preprocessing with neural network experiments, model evaluation, saved artifacts, and a potential web application.
+This project demonstrates an educational workflow for breast cancer classification using deep learning. It combines dataset exploration, preprocessing, neural network experiments, performance evaluation, and visualization.
 
-The project helped strengthen my understanding of Artificial Neural Networks, binary classification, model evaluation, and practical machine learning workflows.
+Working through these steps helps develop practical understanding of Artificial Neural Networks and the process of evaluating a supervised classification model.
 
 ## 👩‍💻 Author
 
@@ -453,11 +554,11 @@ The project helped strengthen my understanding of Artificial Neural Networks, bi
 
 Aspiring Data Science and AI/ML professional, currently looking for a Data Science / AI Internship.
 
-- **GitHub:** [@dhorajiyamisri](https://github.com/dhorajiyamisri)
+- **GitHub Profile:** [dhorajiyamisri](https://github.com/dhorajiyamisri)
 - **Project Repository:** [Deep-Learning-PR1](https://github.com/dhorajiyamisri/Deep-Learning-PR1)
 
 ---
 
 <p align="center">
-  <i>Built as a learning project to explore Deep Learning, neural networks, and practical model development.</i>
+  <i>Learning Deep Learning through hands-on experimentation, evaluation, and visualization.</i>
 </p>
